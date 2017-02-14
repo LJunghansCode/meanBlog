@@ -15,7 +15,8 @@
     "tests"
   ],
   "resolutions": {
-    "angular-ui-router": "0.3.1"
+    "angular-ui-router": "0.3.1",
+    "angular": "^1.6.2"
   },
   "dependencies": {
     "ng-file-upload": "^12.2.13"
