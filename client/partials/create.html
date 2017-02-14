@@ -1,0 +1,104 @@
+<header class="intro-header" style=" background-image: url(/static/img/home-bg.jpg); background-position-y:23%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="page-heading">
+                    <h1>Luca Junghans</h1>
+                    <hr class="small">
+                    <span class="subheading">Full Stack Web Developer</span>
+                </div>
+            </div>
+        </div>
+      <div class="photoText">Taken at lake 22, WA</div>
+    </div>
+</header>
+<div class="container">
+    <div class="row"></div>
+    <form class="form">
+    <label for="title">Title</label>
+    <input class="form-control" type="text" ng-model="blogPost.title">
+      <label for="FirstPar">SubHead One:</label>
+    <input class="form-control" type="text" ng-model="blogPost.subhead1">
+      <label for="FirstPar">First Paragraph:</label>
+    <textarea class="form-control" type="textarea" ng-model="blogPost.firstPar"></textarea>
+      <label for="FirstPar">SubHead Two:</label>
+    <input class="form-control" type="text" ng-model="blogPost.subhead2">
+      <label for="SecondPar">Second Paragraph:</label>
+    <textarea class="form-control" type="textarea" ng-model="blogPost.secondPar"></textarea>
+      <label for="FirstPar">SubHead Three:</label>
+    <input class="form-control" type="text" ng-model="blogPost.subhead3">
+      <label for="ThirdPar">Third Paragraph:</label>
+    <textarea class="form-control" type="textarea" ng-model="blogPost.thirdPar"></textarea>
+      <label for="LastPar">Last Paragraph:</label>
+    <textarea class="form-control" type="textarea" ng-model="blogPost.finalPar"></textarea>
+    pic One:<input class="form-control" type="text" ng-model="blogPost.picOne">
+    pic Two:<input class="form-control" type="text" ng-model="blogPost.picTwo">
+    pic Three:<input class="form-control" type="text" ng-model="blogPost.picThree">
+    pic Four:<input class="form-control" type="text" ng-model="blogPost.picFour">
+    <button class="btn btn-default" type="submit" ng-click="newBlogPost()">Hey Luca, submit!</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Old Pic Upload Code, saving for future use-->
+        <!--<br>
+      <label>Header Photo:</label>
+      <br>
+    
+      name:<input type="text" ng-model="headPhotoTitle">
+      <br>
+
+      photo:
+      <br>
+      <input type="file" ngf-select ng-model="headFile" name="headerImg"    
+             accept="image/*" ngf-max-size="10MB" required>
+      <img ngf-thumbnail="headFile" class="thumb"> <button ng-click="headFile = null" ng-show="headFile">Remove</button>
+      <br>
+      <button ng-click="uploadPic(headFile)">Submit</button>
+      <span class="progress" ng-show="headFile.progress >= 0">
+        <div style="width:{{headFile.progress}}%" 
+            ng-bind="headFile.progress + '%'"></div>
+      </span>
+      <span ng-show="headFile.result">Upload Successful</span>
+      <span class="err" ng-show="errorMsg">{{errorMsg}}</span>
+    <br>-->
+    <!--First Image: 
+    <br>
+    name:<input type="text" ng-model="headPhotoTitle">
+      <br>
+     photo:
+      <br>
+      <input type="file" ngf-select ng-model="mainFile" name="mainfile"    
+             accept="image/*" ngf-max-size="10MB" required>
+      <img ngf-thumbnail="mainFile" class="thumb"> <button ng-click="mainFile = null" ng-show="mainFile">Remove</button>
+      <br>
+      <button ng-click="uploadPic(mainfileFile)">Submit</button>
+      <span class="progress" ng-show="mainFile.progress >= 0">
+        <div style="width:{{mainFile.progress}}%" 
+            ng-bind="mainFile.progress + '%'"></div>
+      </span>
+      <span ng-show="mainFile.result">Upload Successful</span>
+      <span class="err" ng-show="errorMsg">{{errorMsg}}</span>
+    <br>-->

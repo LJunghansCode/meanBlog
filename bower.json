@@ -1,0 +1,23 @@
+{
+  "name": "LucaBlog",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Shimmyshanga <luca.junghans@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular-ui-router": "0.3.1"
+  },
+  "dependencies": {
+    "ng-file-upload": "^12.2.13"
+  }
+}
