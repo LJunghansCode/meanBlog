@@ -24,7 +24,7 @@ app.config(function($routeProvider){
         })
         .when('/create', {
             templateUrl: './partials/create.html',
-            controller : 'blogPostController'
+            controller : 'adminController'
         })
         .otherwise('/home', {
             redirectTo: '/home'

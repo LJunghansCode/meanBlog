@@ -6,16 +6,16 @@ app.factory('postFactory', ['$http', '$location', function(http, loc){
 			loc.url('#!/create');
 			}
 		});
-	}
+	};
     factory.allPosts = function(callback){
 		http.get('/allPosts').then(function(returned_data){
             callback(returned_data);
 		});
-	}
+	};
     factory.getOne = function(id, callback){
 		http.get('/blog/' + id ).then(function(returned_data){
 			callback(returned_data);
 		});
-	}
+	};
 	return factory;
 }]);

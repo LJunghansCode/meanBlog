@@ -9,17 +9,14 @@ app.controller('blogPostController', ['$scope', 'Upload', '$timeout', '$routePar
         scope.allPosts = data.data;
       });
     };
-        	if(routeParams.id){
+      if(routeParams.id){
 	    	postFact.getOne(routeParams.id, function(data){
 			  scope.blogInstance = data.data;
 		});
+    
 	}
    allPosts(); 
 }]);
-
-
-
-
 //OLD PIC CODE
     // scope.uploadPic = function(file) {
     // file.upload = Upload.upload({

@@ -1,18 +1,5 @@
 /*ALSO FONT AWESOME! https://www.bootstrapcdn.com/fontawesome/*/
-form .progress {
-    line-height: 15px;
-}
-.progress {
-    display: inline-block;
-    width: 100px;
-    border: 3px groove #CCC;
-}
-.progress div {
-    font-size: smaller;
-    background: orange;
-    width: 0;
-}
-body,html {
+html {
   height: 100%;
 }
 
@@ -33,7 +20,7 @@ body {
 .contactText{
   text-align: center;
   margin-bottom: 100px;
-}
+} 
 .caption {
   text-align: center;
   font-size: 14px;
