@@ -17,7 +17,8 @@ app.controller('blogPostController', ['$scope', 'Upload', '$timeout', '$routePar
 	}
    allPosts(); 
 }]);
-//OLD PIC CODE
+ 
+//OLD PIC CODE -- Saving for ref
     // scope.uploadPic = function(file) {
     // file.upload = Upload.upload({
     //   url: '/newImage',
