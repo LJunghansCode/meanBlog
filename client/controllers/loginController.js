@@ -1,11 +1,10 @@
 app.controller('loginController', ['loginFactory', '$location', '$scope','$routeParams', function(loginFact, loc, scope, params){
-
     scope.loginLuca = function(){
-        if(!scope.cred.cred){
+        if(!scope.Luca){
             scope.nope = "nope";
         }
-        loginFact.loginLuca(scope.cred, function(data){
-        console.log(data);
+        
+        loginFact.loginLuca(scope.Luca.cred, function(data){
             if(data.data.fail){
                 scope.nope = "nope";
             }

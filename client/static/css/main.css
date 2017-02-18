@@ -31,6 +31,14 @@ footer{
   padding: 5px;
 
 }
+.githubLink{
+  color: cadetblue;
+}
+.githubLink:hover{
+  text-decoration: none;
+  color: black;
+}
+
 .caption {
   text-align: center;
   font-size: 14px;
@@ -54,12 +62,9 @@ footer{
 }
 .sectionTitle{
   text-align: center;
-  
+  padding-bottom: 10px;
 }
-.sectionTitle .Demo{
-  text-align: center;
-  padding-bottom: 20px;
-}
+
 .sectionSubTitle{
   text-align: center;
   padding-bottom: 20px;

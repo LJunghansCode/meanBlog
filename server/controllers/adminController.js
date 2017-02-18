@@ -1,13 +1,13 @@
 var mongoose = require('mongoose');
-var Admin = mongoose.model('Admin');
+var admin = mongoose.model('admin');
 
 
 module.exports = (function(){
     return{
         loginLuca : function(req, res){
-            Admin.findOne({cred : req.body.luca.cred},function(err, admin){
-                if(admin){
-                    req.session.admin = {luca: "Luca"};
+                admin.findOne({cred: req.body.luca}, function(err, Admin){
+                if(Admin){
+                    req.session.admin={luca: "Luca"};
                     res.json({success:true});
                 }
                 else{
