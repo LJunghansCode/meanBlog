@@ -1,10 +1,8 @@
-app.controller('adminController', ['postFactory', '$location', '$scope','$routeParams', function(postFact, loc, scope, params){
-  
-    if(!scope.luca){
-        loc.url('/home');
-    }
-    scope.loginLuca = function(){
-        postFact.loginLuca(scope.Credentials);
-    };
-    scope.submit = postFact.newBlogPost;
+app.controller('adminController', ['loginFactory', '$location', '$scope','$routeParams', function(loginFact, loc, scope, params){
+    loginFact.getAdmin(function(returned_data){
+        if(!returned_data.admin){
+            loc.url('/home');
+        }
+    });
+    
 }]);

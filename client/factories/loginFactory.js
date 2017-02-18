@@ -1,12 +1,15 @@
 app.factory('loginFactory', ['$http', '$location', function(http, loc){
 	var factory = {};
-    scope.loginLuca() = function(callback){
-        http.post('/loginLuca').then(function(returned_data){
-            if(returned_data){
-                console.log(returned_data);
-            }
-        });
-    };    
+        factory.loginLuca = function(luca, callback){
+        http.post('/login', {luca: luca}).then(function(returned_data){
+			callback(returned_data);
+		});
 
+	};
+            factory.getAdmin = function(callback){
+            http.get('/getAdmin').then(function(output){
+            callback(output.data);
+        });
+    };
 	return factory;
 }]);
