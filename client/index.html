@@ -27,32 +27,33 @@
 </head>
 <body ng-controller="homeController">
     <nav class="navbar navbar-default custom-nav navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-     <div class="navbar-header page-scroll">
+    <header class="container-fluid">
+     <aside class="navbar-header page-scroll">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toggleCollapse">
-         <span class="sr-only">Toggle navigation</span>
+         <menu class="sr-only">Toggle navigation</menu>
          <i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand" href="/#!home">LJunghans</a>
-    </div>
-    <div class="collapse navbar-collapse" id="toggleCollapse"> 
+     </aside>
+    <article class="collapse navbar-collapse" id="toggleCollapse"> 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/#!about">My Work</a></li>
         <li><a href="/#!contact">Contact Me</a></li>
         <li><a href="/#!blog">Blog</a></li>
       </ul>
     
-    </div><!--/.nav-collapse -->
-  </div>
+    </article>
+    </header>
 </nav>
 
 <ng-view></ng-view>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<hr>
+        <footer class="container">
+            <section class="row">
+                <article class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="https://twitter.com/ShimmyLibAtana">
+                            <a href="https://twitter.com/JunghansCode">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -68,8 +69,8 @@
                             </a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </article>
+            </section>
+        </footer>
 </body>
 </html>

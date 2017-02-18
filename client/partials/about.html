@@ -5,23 +5,66 @@
                 <div class="page-heading">
                     <h1>Luca Junghans</h1>
                     <hr class="small">
-                    <span class="subheading">Full Stack Web Developer</span>
+                    <span class="subheading">Learning how to learn</span>
                 </div>
             </div>
         </div>
       <div class="photoText">Photo: Apple</div>
     </div>
 </header>
-<div class="container">
-    <div class="container">
+<main class="container">
+    <section class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <article class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>My name is Luca, A software developer currently seeking opportunity in web development. I have a strong interest and background in customer experience, marketing, and advertising. </p>
                 <p>I have a love of people that has been a launch pad into software development. Recently, I left the barbering and beauty industry after five years to pursue my passions in technology.
                  I hope to address engaging problems in user experience, information control, and customer technology interactions.</p>
                 <p>I keep a blog focused on a wide range of my interests. From cooking, politics, gaming, and current events. This is a good place to get to know me, and witness my idealism first hand. </p>
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
     <hr>
-</div>
+    <h1 class="sectionTitle"> Resume and project Overview </h1>
+    <section class="row"> 
+        <article class="col-lg-5 embed-responsive resume" style="padding-bottom: 40%">
+            <object data='/static/pdf/LucaResume.pdf' type='application/pdf' width='100%' height='100%'></object>
+        </article>
+        
+        <article class="col-lg-5 projectContainer">
+            <h1 ng-mouseover="openP=true" ng-mouseleave="openP=false" style="font-family: fantasy;"> <span ng-show="openP" class="glyphicon glyphicon-folder-open"></span> <span ng-show="!openP" class="glyphicon glyphicon-folder-close"></span> <a href="https://github.com/LJunghansCode/PrincessTheGame">Princes$ the Game</a></h1>
+            <p>A game in progress that I'm building in <a href="http://unity.com/">Unity</a> as a passion project.
+                I'm using <a href="http://www.mapeditor.org/">Tiled</a> which is an amazing resource for map building.
+                (These are just my scripts, if you're intersted in a stable, send me an e-mail)
+            </p>
+        </article>
+               <article class="col-lg-5 projectContainer">
+            <h1 ng-mouseover="openS=true" ng-mouseleave="openS=false" style="font-family: fantasy;"> <span ng-show="openS" class="glyphicon glyphicon-folder-open"></span> <span ng-show="!openS" class="glyphicon glyphicon-folder-close"></span> <a href="https://github.com/LJunghansCode/Song-for-Song-app">Song for Song</a></h1>
+            <p>The purpose of this app is to practice building an API in the backend in C#. And querying that API with angularJS on the front end. Also using youtubeAPI to allow some video embed, and enable me to write an autofill function for entries</p>
+        </article>
+    </section>
+    <!--<hr>-->
+    <!--<section class="row">
+    <h1 class="sectionTitle Demo">Demo apps</h1>
+    <h4 class="sectionSubTitle"></h4>
+        <article class="col-lg-3 projectContainer">
+            <h1 ng-mouseover="open1=true" ng-mouseleave="open1=false" style="font-family: fantasy;"> <span ng-show="open1" class="glyphicon glyphicon-folder-open"></span> <span ng-show="!open1" class="glyphicon glyphicon-folder-close"></span> <a href="https://github.com/LJunghansCode/MeanTest">Mean Stack App</h1></a>
+            <p>An app that demonstrates fully functional MEAN stack interactions.
+            </p>
+        </article>
+
+        <article class="col-lg-3 projectContainer">
+            <h1 ng-mouseover="open2=true" ng-mouseleave="open2=false" style="font-family: fantasy;"> <span ng-show="open2" class="glyphicon glyphicon-folder-open"></span> <span ng-show="!open2" class="glyphicon glyphicon-folder-close"></span> <a href="https://github.com/LJunghansCode/Song-for-Song-app">Song for Song</h1></a>
+            <p>The purpose of this app is to practice building an API in the backend in C#. And querying that API with angularJS on the front end. Also using youtubeAPI to allow some video embed, and enable me to write an autofill function for entries</p>
+            </p>
+        </article>
+
+        <article class="col-lg-3 projectContainer">
+            <h1 ng-mouseover="open3=true" ng-mouseleave="open3=false" style="font-family: fantasy;"> <span ng-show="open3" class="glyphicon glyphicon-folder-open"></span> <span ng-show="!open3" class="glyphicon glyphicon-folder-close"></span> <a href="https://github.com/LJunghansCode/Song-for-Song-app">Song for Song</h1></a>
+            <p>The purpose of this app is to practice building an API in the backend in C#. And querying that API with angularJS on the front end. Also using youtubeAPI to allow some video embed, and enable me to write an autofill function for entries</p>
+            </p>
+        </article>
+        
+
+    </section>-->
+    
+</main>

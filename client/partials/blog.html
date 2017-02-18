@@ -5,32 +5,28 @@
                 <div class="page-heading">
                     <h1>Luca Junghans</h1>
                     <hr class="small">
-                    <span class="subheading">Full Stack Web Developer</span>
+                    <span class="subheading">Enjoy!</span>
                 </div>
             </div>
         </div>
       <div class="photoText">Taken at lake 22, WA</div>
     </div>
 </header>
-<div class="container blog-post-list">
-     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <ul>
-                 <li ng-repeat="blog in allPosts">
-                     <div class="post-preview">
-                        <a href="#!/blog/{{blog._id}}">
-                            <h2 class="post-title" ng-bind="blog.title"></h2>
-                            <h3 class="post-subtitle">
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by <a href="#">Luca Junghans</a> on</p>
-                    </div>
-                    </li>
+<main class="container blog-post-list">
+     <section class="container">
+        <section class="row">
+            <article class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul><li ng-repeat="blog in allPosts" class="post-preview">
+                            <a href="#!/blog/{{blog._id}}">
+                            <h2 class="post-title" ng-bind="blog.title"></h2></a>
+                            <h3 class="post-subtitle"></h3>
+                             <p class="post-meta">Posted by Luca Junghans </p>
+                        </li>
+                    </article>
                     </ul>
-                </div>
-            </div>
-        </div>
+                </section>
+            </section>
+        </main>
         <hr>
 
 </div>
