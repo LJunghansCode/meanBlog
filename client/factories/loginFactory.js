@@ -4,7 +4,6 @@ app.factory('loginFactory', ['$http', '$location', function(http, loc){
         http.post('/login', {luca: luca}).then(function(returned_data){
 			callback(returned_data);
 		});
-
 	};
             factory.getAdmin = function(callback){
             http.get('/getAdmin').then(function(output){

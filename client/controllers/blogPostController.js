@@ -1,9 +1,7 @@
 app.controller('blogPostController', ['$scope', 'Upload', '$timeout', '$routeParams', 'postFactory', function(scope, Upload, timeout, routeParams, postFact){
-    scope.newBlogPost = function()
-    {
+    scope.newBlogPost = function(){
       postFact.newPost(scope.blogPost);
     };
-
     var allPosts = function(){
         postFact.allPosts(function(data){
         scope.allPosts = data.data;

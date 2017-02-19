@@ -3,7 +3,7 @@ app.factory('postFactory', ['$http', '$location', function(http, loc){
 	factory.newPost = function(post){
 		http.post('/newBlog', post).then(function(returned_data){
 			if(returned_data){
-			loc.url('#!/create');
+			loc.url('/home');
 			}
 		});
 	};
