@@ -152,7 +152,6 @@ footer{
     color: white;
     padding: 20px;
   }
-
   .custom-nav .navbar-brand:hover{
     color: darkslateblue;
   }
@@ -160,14 +159,12 @@ footer{
     color: black;
     padding: 20px;
   }
-
   .custom-nav .nav li a:hover,
   .custom-nav .nav li a:focus {
     color: rgba(255, 255, 255, 0.8);
     font-size: 62%;
   }
 }
-
 @media only screen and (min-width: 1170px) {
   .custom-nav {
     -webkit-transition: background-color 0.3s;
