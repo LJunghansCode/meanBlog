@@ -7,7 +7,7 @@ module.exports = (function(){
         loginLuca : function(req, res){
                 admin.findOne({cred: req.body.luca}, function(err, Admin){
                 if(Admin){
-                    req.session.admin={luca: "Luca"};
+                    req.session.admin = {luca: "Luca"};
                     res.json({success:true});
                 }
                 else{

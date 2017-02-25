@@ -6,6 +6,9 @@ var multiparty = require('multiparty'),
 module.exports = (function(){
     return{
         newBlog : function(req, res){
+            if(!req.session.admin){
+                res.json({fail:"PleaseStop"});
+            }
 			var postInstance = new blogPost(req.body);
 			postInstance.save(function(err){
 				if(err){
