@@ -3,7 +3,11 @@ var adminController = require('./../controllers/adminController.js');
 
 module.exports = function(app){
     app.post('/newBlog', function(req, res){
-        blogPostController.newBlog(req, res);
+        if(!req.session.admin){
+            res.json({fail:"true"});
+        }else{
+            blogPostController.newBlog(req, res);
+        }
     });
     app.get('/allPosts', function(req, res){
         blogPostController.allPosts(req, res);
