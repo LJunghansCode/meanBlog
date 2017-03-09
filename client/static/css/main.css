@@ -157,12 +157,10 @@ footer{
   }
   .custom-nav .nav li a {
     color: black;
-    padding: 20px;
   }
   .custom-nav .nav li a:hover,
   .custom-nav .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 62%;
+    color: black;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -296,5 +294,39 @@ footer{
 .repeated-item.ng-enter.ng-enter-active,
 .repeated-item.ng-move.ng-move-active {
   opacity: 1;
+}
+.bracketAnimList li a::before,
+.bracketAnimList li a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.bracketAnimList li a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.bracketAnimList li a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.bracketAnimList li a:hover::before,
+.bracketAnimList li a:hover::after,
+.bracketAnimList li a:focus::before,
+.bracketAnimList li a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
