@@ -113,24 +113,13 @@ footer{
   font-size: 12px;
   font-weight: 800;
 }
-.post-preview{
-  border-bottom: 1px solid black; 
-}
-.post-preview:hover{
-  padding: 5px;
-}
-.post-preview a:hover{
-  text-decoration: none;
-}
-.post-title{
-  color: black;
-}
-.post-title:hover{
-  text-decoration: none;
-  color: cadetblue;
-}
 .blog-post-list ul{
   list-style-type: none;
+}
+.blog-post-list ul li a{
+  font-size: 20pt;
+  text-decoration: none;
+  color: black;
 }
 .post-subtitle{
   color: cadetblue;
@@ -329,4 +318,6 @@ footer{
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
 }
+
+
 
