@@ -100,10 +100,17 @@ footer{
 .custom-nav {
   position: absolute;
   top: 0;
+  background-color: grey;
+  border: none;
   left: 0;
+  opacity: .8;
+  color: black;
   width: 100%;
   z-index: 3;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar-default .navbar-nav>li>a {
+    color: black;
 }
 .custom-nav .navbar-brand {
   font-weight: 800;
@@ -113,18 +120,24 @@ footer{
   font-size: 12px;
   font-weight: 800;
 }
+.blog-post-list {
+  margin-top: 3%;
+}
+
 .blog-post-list ul{
   list-style-type: none;
+  text-align: center;
+}
+.blog-post-list ul li{
+  list-style-type: none;
+  text-align: center;
+  padding: 2%;
+  margin: 2%; 
 }
 .blog-post-list ul li a{
   font-size: 20pt;
   text-decoration: none;
   color: black;
-}
-.post-subtitle{
-  color: cadetblue;
-  font-style: italic;
-  margin-left: 5px;
 }
 .post-meta{
   font-size: 14pt;
@@ -137,12 +150,10 @@ footer{
     background: transparent;
     border-bottom: 1px solid transparent;
   }
-  .custom-nav .navbar-brand {
-    color: white;
-    padding: 20px;
-  }
+
   .custom-nav .navbar-brand:hover{
-    color: darkslateblue;
+    color: green;
+    opacity: .7;
   }
   .custom-nav .nav li a {
     color: black;
@@ -170,17 +181,12 @@ footer{
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid black;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
   }
   .custom-nav.is-fixed .navbar-brand {
     color: #333333;
-  }
-  .custom-nav.is-fixed .navbar-brand:hover,
-  .custom-nav.is-fixed .navbar-brand:focus {
-    color: darkslateblue;
   }
   .custom-nav.is-fixed .nav li a {
     color: #333333;
@@ -200,10 +206,7 @@ footer{
 }
 .intro-header {
   background: no-repeat center center;
-  background-attachment: scroll;
-  background-size: cover;
-  margin-bottom: 25px;
-  
+  margin-top: 2%;
 }
 .intro-header .page-heading,
 .intro-header .post-heading,
@@ -211,13 +214,7 @@ footer{
   padding: 100px 0 50px;
   color: white;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .page-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
-}
+
 
 .intro-header .page-heading,
 .intro-header .page-heading {
@@ -239,6 +236,7 @@ footer{
   font-style: italic;
 }
 @media only screen and (min-width: 768px) {
+  
   .intro-header .page-heading h1,
   .intro-header .page-heading h1 {
     font-size: 80px;
@@ -319,5 +317,7 @@ footer{
 	transform: translateX(0px);
 }
 
-
+.routingOutlet {
+  margin-bottom: 30%;
+}
 

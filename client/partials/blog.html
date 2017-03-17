@@ -1,26 +1,11 @@
-<header class="intro-header" style=" background-image: url(/static/img/home-bg.jpg); background-position-y:23%;">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>Luca Junghans</h1>
-                    <hr class="small">
-                    <span class="subheading">Enjoy!</span>
-                </div>
-            </div>
-        </div>
-      <div class="photoText">Taken at lake 22, WA</div>
-    </div>
-</header>
+
 <main class="container blog-post-list">
 
         <section class="row">
             <article class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="bracketAnimList"><li ng-repeat="blog in allPosts">
                              <a href="#!/blog/{{blog._id}}" ng-bind="blog.title" class="post-title"></a>
-                             <h3 class="post-subtitle"></h3>
                              <p class="post-meta">Posted by Luca Junghans </p>
-                             <hr>
                         </li>
                     </article>
                     </ul>
