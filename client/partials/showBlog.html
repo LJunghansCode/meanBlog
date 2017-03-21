@@ -1,14 +1,18 @@
-
+<hr>
 <main>
     <article>
             <div class="container">
+                <header class="row blogHeader">
+                    <h1 ng-bind="blogInstance.title"> </h1>
+                    <img src="{{blogInstance.picOne}}" alt="HeaderImage" class="img-responsive">
+                </header>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <h2 class="section-heading"></h2>
                         <p ng-bind="blogInstance.firstPar"></p>
                         <hr>
-                        <p ng-bind="blogInstance.secondPar"></p>
                         <img class="img-responsive" src="{{blogInstance.picTwo}}"/>
+                        <p ng-bind="blogInstance.secondPar"></p>
                         <img class="img-responsive" src="{{blogInstance.picThree}}" />
                         <p ng-bind="blogInstance.thirdPar"></p>
                         <img class="img-responsive" src="{{blogInstance.picFour}}" />

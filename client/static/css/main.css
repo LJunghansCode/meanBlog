@@ -286,11 +286,17 @@ footer{
     .titleImage {
       margin-top: 20%;
     }
+    .blogHeader h1 {
+      font-size: 100%;
+    }
   
 }
 @media only screen and (min-width: 500px) and (max-width : 800px) {
       .titleImage {
            margin-top: 10%;
+    }
+    .blogHeader h1 {
+      font-size: 100%;
     }
 }
 .skills ul {
@@ -309,3 +315,17 @@ footer{
   width: 45px;
   height: 45px;
 }
+
+.blogHeader h1 {
+  text-align: center;  
+  font-size: 50pt;
+  opacity: 1;
+}
+.singlePost {
+  text-align: center;
+}
+.blogHeader img {
+ border: 5px solid darkgrey;
+ border-radius: 2px;
+}
+
